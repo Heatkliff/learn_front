@@ -1,0 +1,30 @@
+@import "fonts";
+
+
+.header-menu-list{
+  background: none;
+  display: flex;
+  flex-direction: row;
+
+  li{
+    list-style: none;
+
+    a{
+      font-family: "Work Sans", serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 33px;
+      text-align: left;
+      color: #1e2020;
+      text-transform: none;
+      text-decoration: none;
+    }
+  }
+
+  .header-menu-list__logo{
+    width: 180px;
+    height: 125px;
+    background-image: url("../images/Logo.png");
+    display: block;
+  }
+}
