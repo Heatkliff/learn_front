@@ -1,0 +1,169 @@
+.banner-block {
+  background-image: url("../images/Background image.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .slider {
+    margin-top: 260px;
+
+    .slide {
+      min-height: 300px;
+      padding: 10px;
+
+      &-content {
+        width: 80%;
+        margin: 0 0 0 auto;
+
+        &__title {
+          max-width: 700px;
+          font-family: Arial, sans-serif;
+          font-weight: normal;
+          font-size: 53px;
+          line-height: 33px;
+          text-align: left;
+          color: #57616b;
+        }
+
+        &__text {
+          max-width: 640px;
+          margin-top: 27px;
+          font-family: Arial, sans-serif;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 32px;
+          text-align: center;
+          color: #57616b;
+        }
+      }
+
+      &-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 56px;
+
+        &__link {
+          margin: 0 17px;
+          padding: 20px 50px;
+          border-radius: 50px;
+          background: transparent;
+          border: 2px solid #888f8e;
+          transition: 1s;
+          font-family: "Work Sans", serif;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 33px;
+          text-align: left;
+          color: #888f8e;
+
+          &:hover {
+            background: #3d77ea;
+            border: 2px solid #3d77ea;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .slider-dots {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+          font-size: 0;
+          line-height: 0;
+          display: block;
+          width: 20px;
+          height: 20px;
+          padding: 5px;
+          cursor: pointer;
+          color: transparent;
+          border: 0;
+          outline: none;
+          background: transparent;
+
+          &:hover {
+            outline: none;
+          }
+
+          &:hover:before {
+            opacity: 1;
+          }
+
+          &:before {
+            font-size: 7px;
+            line-height: 20px;
+            position: absolute;
+            font-weight: bolder;
+            top: 0;
+            left: 1.5px;
+            width: 7px;
+            height: 7px;
+            content: '';
+            text-align: center;
+            opacity: .25;
+            color: black;
+            border: 1px solid #000;
+            border-radius: 50%;
+            background-color: #000000;
+          }
+        }
+
+        &.slick-active button:before {
+          top: 0;
+          left: 0;
+          opacity: .75;
+          width: 10px;
+          height: 10px;
+          background: transparent;
+          border: 3px solid #888F8E;
+        }
+      }
+    }
+  }
+
+  .scroll-down {
+    height: 350px;
+    position: relative;
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      height: 26px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-family: Arial, serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 33px;
+      text-align: left;
+      color: #888f8e;
+
+      &:after {
+        margin-top: 4px;
+        padding-left: 26px;
+        content: url("../images/arrow_down.png");
+      }
+    }
+  }
+}

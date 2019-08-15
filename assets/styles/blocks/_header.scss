@@ -1,0 +1,43 @@
+header{
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+
+  .header-menu-list{
+    background: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      li{
+        list-style: none;
+        padding: 0 10px;
+
+        a{
+          font-family: "Work Sans", serif;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 33px;
+          text-align: left;
+          color: #1e2020;
+          text-transform: none;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .header-menu-list__logo{
+      width: 180px;
+      height: 125px;
+      background-image: url("../images/Logo.png");
+      display: block;
+    }
+  }
+
+}
